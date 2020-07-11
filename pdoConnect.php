@@ -1,8 +1,8 @@
 <?php 
 
-$dsn = "mysql:host=localhost;dbname=finelia"; 
+$dsn = "mysql:host=database;dbname=finelia"; 
 $user = "root"; 
-$password = ""; 
+$password = "password"; 
 
 try {
     $pdo = new PDO($dsn, $user, $password); 
