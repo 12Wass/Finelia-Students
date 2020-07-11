@@ -18,6 +18,7 @@ if (isset($_POST['note']) && isset($_POST['matiere']) && isset($_POST['etudiant'
         
         $req = $pdo->prepare('INSERT INTO notes(idMatiere, note, idEtudiant) VALUES (?, ?, ?)');
         $req->execute(array($idMatiere, $note, $idEtudiant));
+        $noteAdded = "Note ajoutée!";
     }
 }
 
@@ -47,6 +48,11 @@ $matieres = $req->fetchAll(PDO::FETCH_ASSOC);
     <?php if (isset($error)): ?>
         <div class="alert alert-danger">
             <?= $error ?> 
+        </div>
+    <?php endif; ?> 
+    <?php if (isset($noteAdded)): ?>
+        <div class="alert alert-success">
+            <?= $noteAdded ?> 
         </div>
     <?php endif; ?> 
     <h1 class="text-center">Notes</h1>
