@@ -5,7 +5,7 @@ include_once('pdoConnect.php');
 if (isset($_POST['deleteMatiere'])){
     $req = $pdo->prepare('DELETE FROM matiere WHERE id = ?');
     $req->execute(array($_POST['deleteMatiere']));
-    $deleteTrue = "Note supprimée.";
+    $deleteTrue = "Matière supprimée.";
 }
 
 if (isset($_POST['matiere']) && isset($_POST['coefficient'])) {
