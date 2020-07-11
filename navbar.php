@@ -10,6 +10,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="moyenne.php">Moyennes des élèves</a>
+      </li>      
+      <li class="nav-item">
+        <a class="nav-link" href="addMatiere.php">Ajouter une matière</a>
       </li>
     </ul>
   </div>
