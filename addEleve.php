@@ -1,5 +1,5 @@
 <?php
-
+// Ok
 include_once('pdoConnect.php'); 
 
 if (isset($_POST['deleteEtudiant'])){
