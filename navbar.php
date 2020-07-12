@@ -12,7 +12,10 @@
         <a class="nav-link" href="moyenne.php">Moyennes des élèves</a>
       </li>      
       <li class="nav-item">
-        <a class="nav-link" href="addMatiere.php">Ajouter une matière</a>
+        <a class="nav-link" href="addMatiere.php">Gestion des matières</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="addEleve.php">Gestion des élèves</a>
       </li>
     </ul>
   </div>
